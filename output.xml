@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-23T17:43:38.107837" rpa="false" schemaversion="5">
+<suite id="s1" name="MainTests" source="C:\Users\Visitante\Documents\Projetos\Desafio Sea Tecnologia\MainTests.robot">
+<kw name="Abrir Navegador e Maximizar" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:38.640787" level="INFO">Opening browser 'chrome' to base url 'http://analista-teste.seatecnologia.com.br/'.</msg>
+<msg time="2024-04-23T17:43:44.355431" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\Visitante\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url_base}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-23T17:43:38.640787" elapsed="10.255359"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-23T17:43:48.897146" elapsed="0.155989"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:38.639788" elapsed="10.413347"/>
+</kw>
+<test id="s1-t1" name="Run Test Suite" line="69">
+<kw name="Adicionar Novo Funcionário Sem EPI">
+<kw name="Clicar em Adicionar Funcionário">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:49.060135" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/div[2]/button'.</msg>
+<arg>${button_adicionar_funcionario}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:49.059135" elapsed="0.399976"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:49.058139" elapsed="0.400972"/>
+</kw>
+<kw name="Clicar em Ativo">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:49.461110" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/form/div[2]/button/span'.</msg>
+<arg>${button_ativo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:49.460109" elapsed="0.107993"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:49.459111" elapsed="0.108991"/>
+</kw>
+<kw name="Preencher Nome">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:49.569102" level="INFO">Typing text 'Jane Doe' into text field '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[1]/input'.</msg>
+<arg>${input_name}</arg>
+<arg>Jane Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:49.569102" elapsed="0.329979"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:49.569102" elapsed="0.329979"/>
+</kw>
+<kw name="Preencher CPF">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:49.900081" level="INFO">Typing text '12345678900' into text field '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[3]/input'.</msg>
+<arg>${input_cpf}</arg>
+<arg>12345678900</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:49.900081" elapsed="0.225989"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:49.899081" elapsed="0.226989"/>
+</kw>
+<kw name="Preencher RG">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:50.127069" level="INFO">Typing text '5498234' into text field '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[5]/input'.</msg>
+<arg>${input_rg}</arg>
+<arg>5498234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:50.127069" elapsed="0.217987"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:50.127069" elapsed="0.217987"/>
+</kw>
+<kw name="Selecionar Gênero">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:50.347055" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[2]/div/label[2]/span[1]/input'.</msg>
+<arg>${radio_button_select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:50.346054" elapsed="0.136993"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:50.346054" elapsed="0.136993"/>
+</kw>
+<kw name="Preencher Data de Nascimento">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:50.485047" level="INFO">Typing text '19-01-2000' into text field '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[4]/input'.</msg>
+<arg>${input_birthDay}</arg>
+<arg>19-01-2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:50.484044" elapsed="0.249987"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:50.484044" elapsed="0.250986"/>
+</kw>
+<kw name="Abrir Dropdown Cargo e Selecionar Cargo 04">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:50.736030" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/form/div[3]/div/div[6]/div'.</msg>
+<arg>${dropdown_open}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:50.736030" elapsed="0.129992"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dropdown_cargo_04}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-23T17:43:50.867019" elapsed="0.361979"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:51.230005" level="INFO">Clicking element '//*[@title='Cargo 04']'.</msg>
+<arg>${dropdown_cargo_04}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.228998" elapsed="0.103995"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:50.735030" elapsed="0.597963"/>
+</kw>
+<kw name="Selecionar e Preencher Detalhes do EPI">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:51.334992" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/form/div[4]/div/label/span[1]/input'.</msg>
+<arg>${sem_epi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.333992" elapsed="0.160992"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:51.333992" elapsed="0.160992"/>
+</kw>
+<kw name="Salvar Funcionário">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:51.496985" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/form/button'.</msg>
+<arg>${button_salvar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.496985" elapsed="0.171987"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:51.495983" elapsed="0.172989"/>
+</kw>
+<tag>Funcionário</tag>
+<doc>Adiciona um novo funcionário sem detalhes do EPI.</doc>
+<status status="PASS" start="2024-04-23T17:43:49.057135" elapsed="2.611837"/>
+</kw>
+<kw name="Filtrar Funcionários Ativos">
+<kw name="Clicar em Ver Apenas Ativos">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:51.675972" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/div[2]/div[1]/button[1]'.</msg>
+<arg>${button_Ver_apenas_ativos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.674974" elapsed="0.151990"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:51.673973" elapsed="0.153990"/>
+</kw>
+<kw name="Clicar em Limpar Filtros">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-23T17:43:51.829964" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/div[2]/div[1]/button[2]'.</msg>
+<arg>${button_Limpar_Filtros}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.828964" elapsed="0.096995"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:51.827963" elapsed="0.097996"/>
+</kw>
+<tag>Filtro</tag>
+<doc>Filtra por funcionários ativos.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.673973" elapsed="0.251986"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:49.053135" elapsed="2.880821"/>
+</test>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-23T17:43:51.938955" elapsed="6.966567"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:51.938955" elapsed="6.966567"/>
+</kw>
+<status status="PASS" start="2024-04-23T17:43:38.111855" elapsed="20.794663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MainTests">MainTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-23T17:43:44.355431" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\Visitante\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

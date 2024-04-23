@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-21T19:12:25.860789" rpa="false" schemaversion="5">
+<suite id="s1" name="Desafio Sea Tecnologia" source="C:\Users\Visitante\Documents\Projetos\Desafio Sea Tecnologia">
+<suite id="s1-s1" name="Cadastrafuncionario" source="C:\Users\Visitante\Documents\Projetos\Desafio Sea Tecnologia\cadastrafuncionario.robot">
+<test id="s1-s1-t1" name="Adicionar Novo Funcionário e Preencher Detalhes" line="73">
+<kw name="Abrir Navegador e Maximizar">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:26.536745" level="INFO">Opening browser 'chrome' to base url 'http://analista-teste.seatecnologia.com.br/'.</msg>
+<msg time="2024-04-21T19:12:28.140642" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\Visitante\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url_base}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T19:12:26.535746" elapsed="6.904436"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T19:12:33.441182" elapsed="0.187985"/>
+</kw>
+<status status="PASS" start="2024-04-21T19:12:26.532748" elapsed="7.096419"/>
+</kw>
+<kw name="Clicar em Adicionar Funcionário">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:33.632169" level="INFO">Clicking element '//*[@id="root"]/main/div[2]/div[2]/div[2]/button'.</msg>
+<msg time="2024-04-21T19:12:34.441117" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-21T19:12:34.442115" level="FAIL">Element with locator '//*[@id="root"]/main/div[2]/div[2]/div[2]/button' not found.</msg>
+<arg>${button_adicionar_funcionario}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-21T19:12:33.631169" elapsed="0.829946">Element with locator '//*[@id="root"]/main/div[2]/div[2]/div[2]/button' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:34.462115" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-21T19:12:33.630174" elapsed="0.832940">Element with locator '//*[@id="root"]/main/div[2]/div[2]/div[2]/button' not found.</status>
+</kw>
+<kw name="Preencher Nome">
+<status status="NOT RUN" start="2024-04-21T19:12:34.464114" elapsed="0.001002"/>
+</kw>
+<kw name="Preencher CPF">
+<status status="NOT RUN" start="2024-04-21T19:12:34.466116" elapsed="0.001001"/>
+</kw>
+<kw name="Preencher Data de Nascimento">
+<status status="NOT RUN" start="2024-04-21T19:12:34.468114" elapsed="0.000000"/>
+</kw>
+<kw name="Preencher RG">
+<status status="NOT RUN" start="2024-04-21T19:12:34.469113" elapsed="0.000000"/>
+</kw>
+<kw name="Clicar em Ativo">
+<status status="NOT RUN" start="2024-04-21T19:12:34.470113" elapsed="0.000000"/>
+</kw>
+<kw name="Selecionar Cargo 2">
+<status status="NOT RUN" start="2024-04-21T19:12:34.471113" elapsed="0.000000"/>
+</kw>
+<kw name="Selecionar Gênero">
+<status status="NOT RUN" start="2024-04-21T19:12:34.472114" elapsed="0.000000"/>
+</kw>
+<kw name="Selecionar e Preencher Detalhes do EPI">
+<status status="NOT RUN" start="2024-04-21T19:12:34.473114" elapsed="0.000999"/>
+</kw>
+<kw name="Salvar Funcionário">
+<status status="NOT RUN" start="2024-04-21T19:12:34.475114" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-21T19:12:26.529745" elapsed="7.946369">Element with locator '//*[@id="root"]/main/div[2]/div[2]/div[2]/button' not found.</status>
+</test>
+<status status="FAIL" start="2024-04-21T19:12:25.949782" elapsed="8.530332"/>
+</suite>
+<status status="FAIL" start="2024-04-21T19:12:25.873790" elapsed="8.612323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Desafio Sea Tecnologia">Desafio Sea Tecnologia</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Cadastrafuncionario">Desafio Sea Tecnologia.Cadastrafuncionario</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-21T19:12:28.140642" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\Visitante\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
